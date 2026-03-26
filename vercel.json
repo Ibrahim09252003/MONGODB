@@ -2,10 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "arcreate-new/src/backend/server.js",
-      "use": "@vercel/node"
-    },
-    {
       "src": "arcreate-new/package.json",
       "use": "@vercel/static-build",
       "config": {
@@ -15,12 +11,8 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "arcreate-new/src/backend/server.js"
-    },
-    {
       "src": "/(.*)",
-      "dest": "arcreate-new/build/$1"
+      "dest": "/$1"
     }
   ]
 }

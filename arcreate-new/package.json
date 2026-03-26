@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "CI=false DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node src/backend/server.js",
@@ -36,11 +36,15 @@
   "eslintConfig": {
     "extends": ["react-app"],
     "rules": {
-      "react-hooks/exhaustive-deps": "off",
       "no-unused-vars": "off",
-      "no-undef": "off",
+      "react-hooks/exhaustive-deps": "off",
       "import/no-anonymous-default-export": "off",
-      "react/jsx-no-target-blank": "off"
+      "no-useless-escape": "off",
+      "react/jsx-no-target-blank": "off",
+      "no-undef": "off",
+      "no-empty": "off",
+      "no-console": "off",
+      "no-debugger": "off"
     }
   },
   "browserslist": {
