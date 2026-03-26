@@ -1,0 +1,8 @@
+{
+  "name": "arcreate-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd arcreate-new && npm install",
+    "start": "cd arcreate-new && node src/backend/server.js"
+  }
+}
