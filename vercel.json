@@ -2,17 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "arcreate-new/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
+      "src": "build/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "/build/$1"
     }
   ]
 }
