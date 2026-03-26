@@ -30,7 +30,7 @@ const logger = winston.createLogger({
 });
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5001'],
+  origin: ['http://localhost:3000', 'http://localhost:5001', 'https://mongodb-my6s.vercel.app'],
   credentials: true
 }));
 
